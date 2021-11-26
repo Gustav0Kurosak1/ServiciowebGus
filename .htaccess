@@ -1,0 +1,5 @@
+RewriteEngine On
+
+
+RewriteRule ^buscar-(.*?)/(.*?)/$ musica.php?q=$1&page=$2 [L,NC,QSA]
+RewriteRule ^buscar-(.*?)/$ musica.php?q=$1 [L,NC,QSA]
